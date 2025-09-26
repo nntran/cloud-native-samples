@@ -31,7 +31,7 @@
     "joi": "^18.0.1",
     "jsonwebtoken": "^9.0.0",
     "mongodb-memory-server": "^10.2.1",
-    "mongoose": "^8.18.0",
+    "mongoose": "^8.18.2",
     "swagger-ui-express": "^5.0.1",
     "winston": "^3.8.2",
     "yamljs": "^0.3.0"
