@@ -112,13 +112,13 @@ docker compose down
 
 ### Using Skaffold to deploy to Minikube
 
-#### 1. Start Minikube
+#### Start Minikube
 
 ```bash
 minikube start
 ```
 
-#### 2. Deploy services
+#### Deploy services
 
 * Build and deploy all services to Minikube
 
