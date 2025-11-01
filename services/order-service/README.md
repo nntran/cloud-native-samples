@@ -180,7 +180,7 @@ kubectl apply -f k8s/
 * With skaffold
 
 ```bash
-skaffold dev -p minikube
+skaffold dev -p local
 ```
 
 ## API Documentation

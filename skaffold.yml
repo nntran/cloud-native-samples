@@ -4,19 +4,26 @@ metadata:
   name: cloud-native-samples
 
 requires:
-  - configs: ["infrastructure"]
-    path: infrastructure
-    activeProfiles: &profiles
-      - name: minikube
-        activatedBy: [minikube]
 
-  - configs: ["product-service"]
-    path: services/product-service
-    activeProfiles: *profiles
+  # - configs: ["infrastructure"]
+  #   path: infrastructure
+  #   activeProfiles: &profiles
+  #     - name: local
+  #       activatedBy: [local]
 
   - configs: ["order-service"]
     path: services/order-service
-    activeProfiles: *profiles
+    activeProfiles: &profiles
+      - name: local
+        activatedBy: [local]
+
+  # - configs: ["product-service"]
+  #   path: services/product-service
+  #   activeProfiles: *profiles
+
+  # - configs: ["order-service"]
+  #   path: services/order-service
+  #   activeProfiles: *profiles
 
   # - configs: ["user-service"]
   #   path: services/user-service
