@@ -3,19 +3,19 @@ kind: Config
 metadata:
   name: order-service
 
-requires:
-  - configs: ["mongodb"]
-    git:
-      repo: https://github.com/ntdtfr/tools.git
-      path: databases/mongodb/skaffold.yaml
-      ref: main
-      sync: true
-    activeProfiles: &profiles
-      - name: minikube
-        activatedBy: [minikube]
+# requires:
+#   - configs: ["mongodb"]
+#     git:
+#       repo: https://github.com/flexwiz/fw-cnt.git
+#       path: storage/database/mongodb/skaffold.yaml
+#       ref: main
+#       sync: true
+#     activeProfiles: &profiles
+#       - name: local
+#         activatedBy: [local]
 
 profiles:
-  - name: minikube
+  - name: local
     activation:
       - kubeContext: minikube
     build:

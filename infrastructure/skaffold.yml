@@ -6,38 +6,38 @@ metadata:
 requires:
   - configs: ["mongodb"]
     git:
-      repo: https://github.com/ntdtfr/tools.git
-      path: databases/mongodb/skaffold.yaml
+      repo: https://github.com/flexwiz/fw-cnt.git
+      path: storage/database/mongodb/skaffold.yaml
       ref: main
       sync: true
     activeProfiles: &profiles
-      - name: minikube
-        activatedBy: [minikube]
+      - name: local
+        activatedBy: [local]
 
-  - configs: ["redis"]
-    git:
-      repo: https://github.com/ntdtfr/tools.git
-      path: databases/redis/skaffold.yaml
-      ref: main
-      sync: true
-    activeProfiles: *profiles
+  # - configs: ["redis"]
+  #   git:
+  #     repo: https://github.com/flexwiz/fw-cnt.git
+  #     path: databases/redis/skaffold.yaml
+  #     ref: main
+  #     sync: true
+  #   activeProfiles: *profiles
 
-  - configs: ["rabbitmq"]
-    git:
-      repo: https://github.com/ntdtfr/tools.git
-      path: message-brokers/rabbitmq/skaffold.yaml
-      ref: main
-      sync: true
-    activeProfiles: *profiles
+  # - configs: ["rabbitmq"]
+  #   git:
+  #     repo: https://github.com/flexwiz/fw-cnt.git
+  #     path: message-brokers/rabbitmq/skaffold.yaml
+  #     ref: main
+  #     sync: true
+  #   activeProfiles: *profiles
 
-  - configs: ["keycloak"]
-    git:
-      repo: https://github.com/ntdtfr/tools.git
-      path: security/keycloak/skaffold.yaml
-      ref: main
-      sync: true
-    activeProfiles: *profiles
+  # - configs: ["keycloak"]
+  #   git:
+  #     repo: https://github.com/flexwiz/fw-cnt.git
+  #     path: security/keycloak/skaffold.yaml
+  #     ref: main
+  #     sync: true
+  #   activeProfiles: *profiles
 
-  - configs: ["api-gateway"]
-    path: api-gateway
-    activeProfiles: *profiles
+  # - configs: ["api-gateway"]
+  #   path: api-gateway
+  #   activeProfiles: *profiles
