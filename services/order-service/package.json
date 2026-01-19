@@ -37,7 +37,7 @@
     "mongodb-memory-server": "^10.3.0",
     "mongoose": "^9.0.1",
     "swagger-ui-express": "^5.0.1",
-    "winston": "^3.18.3",
+    "winston": "^3.19.0",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
